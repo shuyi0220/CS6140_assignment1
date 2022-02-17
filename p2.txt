@@ -1,0 +1,12 @@
+Part II: (entropy)
+
+(1)
+The decrease in entropy is just the Mutual Information of q and b, where q represents the node, b represents the binary feature,
+I(q ; b) = I(b ; q) = H(b) - H(b|q)
+Since b is binary, H(b) <= - 2 * 1/2 * log2 (1/2) = 1, H(b|q) >= 0, H(b) - H(b|q) <= 1.
+
+(2)
+Suppose the feature has m values.
+I(q; m) = H(m) - H(m|q)
+H(m) <= - m * 1/m * log2 (1/m) = log2(m), also H(m|q) >= 0,
+so I(q; m) <= log2(m)
